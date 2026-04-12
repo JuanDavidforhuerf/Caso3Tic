@@ -1,6 +1,6 @@
 package threads;
-import Main.Evento;
 import Main.Buzon;
+import Main.Evento;
 import java.util.Random;
 
 public class ThreadBroker extends Thread{
