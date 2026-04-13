@@ -1,0 +1,6 @@
+ni=4
+numBase=3
+nc=2
+ns=3
+tam1=10
+tam2=5
