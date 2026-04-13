@@ -8,7 +8,7 @@ public class Main {
 
         //extraccion datos del archivo txt
         Properties config = new Properties();
-        config.load(new FileInputStream("C:/Users/Juan David Forero/Downloads/Caso3Tic/src/Data/prueba1.txt"));
+        config.load(new FileInputStream("src/Data/prueba1.txt"));
         int ni = Integer.parseInt(config.getProperty("ni"));
         int numBase = Integer.parseInt(config.getProperty("numBase"));
         int nc = Integer.parseInt(config.getProperty("nc"));
