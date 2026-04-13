@@ -5,12 +5,15 @@ import threads.*;
 
 public class Main {
      public static void main(String[] args) throws Exception {
-        File f = new File("Caso3Tic/src/Data/config.txt");
-        System.out.println("Existe: " + f.exists());
-        System.out.println("Ruta absoluta: " + f.getAbsolutePath());
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.print("Ingrese el nombre del archivo de configuracion incluyendo .txt: ");
+        String nombreArchivo = br.readLine();
+
+
         //extraccion datos del archivo txt
         Properties config = new Properties();
-        config.load(new FileInputStream("Caso3Tic/src/Data/config.txt"));
+        config.load(new FileInputStream("Caso3Tic/src/Data/"+nombreArchivo));
         int ni = Integer.parseInt(config.getProperty("ni"));
         int numBase = Integer.parseInt(config.getProperty("numBase"));
         int nc = Integer.parseInt(config.getProperty("nc"));
