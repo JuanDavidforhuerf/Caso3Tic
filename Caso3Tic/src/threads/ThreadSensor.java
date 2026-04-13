@@ -1,6 +1,6 @@
 package threads;
-import Main.Evento;
 import Main.Buzon;
+import Main.Evento;
 import java.util.Random;
 
 public class ThreadSensor extends Thread{
@@ -38,6 +38,6 @@ public class ThreadSensor extends Thread{
 
 
         
-        System.out.println("Sensor: " + id+ "Terminó la creacion de sus eventos.");
+        System.out.println("Sensor " + id+ ": Terminó la creacion de sus eventos.");
     }
 }
